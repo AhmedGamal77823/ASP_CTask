@@ -59,16 +59,6 @@ export default defineComponent({
             this.message = err.response.data.message ?? err.response.data.title ?? "Error" 
           console.log(err,err.response.data.message);
         });
-        
-        // fetch("api/Users/password/reset",{
-        //     method:"POST",
-        //     headers: { "Content-Type": "application/json" },
-        //     body: JSON.stringify(this.form)
-        // }).then(res => {
-        //     console.log(res);
-        // }).catch(err => {
-        //     console.log(err.response);
-        // })
     },
   },
 });
